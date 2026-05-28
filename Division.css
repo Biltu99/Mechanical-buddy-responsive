@@ -1,0 +1,776 @@
+/* Unified Login Page - White & Blue Premium Theme */
+
+.unified-login-page {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.cyber-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #F0F9FF 0%, #FFFFFF 100%);
+  z-index: -2;
+}
+
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+}
+
+.glow-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  animation: floatOrb 10s ease-in-out infinite;
+}
+
+.orb1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(37, 99, 235, 0.08);
+  top: -150px;
+  right: -150px;
+}
+
+.orb2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(59, 130, 246, 0.06);
+  bottom: -100px;
+  left: -100px;
+  animation-delay: 3s;
+}
+
+.orb3 {
+  width: 250px;
+  height: 250px;
+  background: rgba(96, 165, 250, 0.06);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 6s;
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+  50% { transform: translate(20px, -20px) scale(1.1); opacity: 0.8; }
+}
+
+.unified-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px 0px;
+  min-height: 100vh;
+}
+
+.unified-branding {
+  flex: 1;
+  max-width: 50%;
+  padding: 40px;
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  border-radius: 40px;
+  padding: 6px 16px;
+  margin-bottom: 30px;
+}
+
+.brand-badge svg {
+  color: #2563EB;
+  font-size: 14px;
+}
+
+.brand-badge span {
+  color: #2563EB;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.unified-branding h1 {
+  font-size: 64px;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #1E3A8A;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(135deg, #2563EB, #3B82F6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-description {
+  color: #64748B;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.feature-list-unified {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.feature-item-unified {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #E2E8F0;
+  transition: all 0.3s ease;
+}
+
+.feature-item-unified:hover {
+  transform: translateX(8px);
+  border-color: #2563EB;
+}
+
+.feature-icon-unified {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 12px;
+  font-size: 20px;
+  color: #2563EB;
+}
+
+.feature-item-unified span {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stats-row-unified {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.stat-card-unified {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card-unified:hover {
+  transform: translateY(-5px);
+  border-color: #2563EB;
+}
+
+.stat-icon-unified {
+  font-size: 28px;
+  color: #2563EB;
+  margin-bottom: 12px;
+}
+
+.stat-value-unified {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #1E3A8A;
+  margin-bottom: 6px;
+}
+
+.stat-label-unified {
+  font-size: 11px;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.unified-login-card {
+  flex: 1;
+  max-width: 500px;
+  background: #FFFFFF;
+  border-radius: 32px;
+  padding: 48px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #E2E8F0;
+}
+
+.login-header-unified {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cyber-lock-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #2563EB, #3B82F6);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+}
+
+.login-header-unified h2 {
+  font-size: 28px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #1E3A8A;
+  margin-bottom: 10px;
+}
+
+.login-header-unified p {
+  color: #64748B;
+  font-size: 14px;
+}
+
+.login-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.login-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.login-option-btn:hover {
+  transform: translateY(-4px);
+}
+
+.customer-btn:hover {
+  background: #EFF6FF;
+  border-color: #2563EB;
+}
+
+.mechanic-btn:hover {
+  background: #EFF6FF;
+  border-color: #2563EB;
+}
+
+.btn-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 20px;
+  font-size: 28px;
+  color: #2563EB;
+}
+
+.btn-content {
+  flex: 1;
+}
+
+.btn-content h3 {
+  font-size: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #1E3A8A;
+  margin-bottom: 6px;
+}
+
+.btn-content p {
+  font-size: 13px;
+  color: #64748B;
+}
+
+.btn-arrow {
+  font-size: 20px;
+  color: #2563EB;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.login-option-btn:hover .btn-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.register-prompt {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #E2E8F0;
+  margin-bottom: 24px;
+}
+
+.register-prompt p {
+  color: #64748B;
+  font-size: 14px;
+}
+
+.register-link-unified {
+  color: #2563EB;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.live-status-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #F8FAFC;
+  padding: 12px;
+  border-radius: 40px;
+  border: 1px solid #E2E8F0;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.7; }
+}
+
+.live-status-indicator span {
+  color: #2563EB;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - NO GLITCH
+   ============================================ */
+
+/* Tablet (768px - 968px) */
+@media (max-width: 968px) {
+  .unified-container {
+    flex-direction: column;
+    padding: 50px 30px;
+    gap: 35px;
+  }
+  
+  .unified-branding {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .unified-login-card {
+    max-width: 100%;
+  }
+  
+  .unified-branding h1 {
+    font-size: 42px;
+  }
+  
+  .brand-description {
+    font-size: 15px;
+    max-width: 500px;
+    margin: 0 auto 25px;
+  }
+  
+  .brand-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile Landscape (576px - 768px) */
+@media (max-width: 768px) {
+  .unified-container {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  
+  .unified-branding {
+    padding: 0 15px;
+  }
+  
+  .unified-branding h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+  
+  .brand-description {
+    display: none;
+  }
+  
+  .feature-list-unified {
+    display: none;
+  }
+  
+  .brand-badge {
+    display: none;
+  }
+  
+  /* Stats Row - Keep 3 columns */
+  .stats-row-unified {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-card-unified {
+    padding: 12px 8px;
+  }
+  
+  .stat-icon-unified {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  
+  .stat-value-unified {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  .stat-label-unified {
+    font-size: 9px;
+  }
+  
+  /* Login Card */
+  .unified-login-card {
+    padding: 30px 24px;
+  }
+  
+  .login-header-unified {
+    margin-bottom: 25px;
+  }
+  
+  .login-header-unified h2 {
+    font-size: 24px;
+  }
+  
+  .login-header-unified p {
+    font-size: 13px;
+  }
+  
+  .cyber-lock-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .login-option-btn {
+    padding: 16px;
+    gap: 12px;
+  }
+  
+  .btn-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  
+  .btn-content h3 {
+    font-size: 16px;
+  }
+  
+  .btn-content p {
+    font-size: 11px;
+  }
+  
+  .register-prompt {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .register-prompt p {
+    font-size: 13px;
+  }
+  
+  .live-status-indicator {
+    padding: 10px 15px;
+  }
+  
+  .live-status-indicator span {
+    font-size: 11px;
+  }
+}
+
+/* Mobile Portrait (480px - 576px) */
+@media (max-width: 576px) {
+  .unified-container {
+    padding: 30px 15px;
+    gap: 25px;
+  }
+  
+  .unified-branding h1 {
+    font-size: 30px;
+  }
+  
+  .stats-row-unified {
+    gap: 10px;
+  }
+  
+  .stat-card-unified {
+    padding: 10px 6px;
+  }
+  
+  .stat-icon-unified {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .stat-value-unified {
+    font-size: 16px;
+  }
+  
+  .stat-label-unified {
+    font-size: 8px;
+  }
+  
+  .unified-login-card {
+    padding: 25px 20px;
+  }
+  
+  .login-header-unified h2 {
+    font-size: 22px;
+  }
+  
+  .cyber-lock-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+  
+  .login-option-btn {
+    padding: 14px;
+    gap: 10px;
+  }
+  
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .btn-content h3 {
+    font-size: 15px;
+  }
+  
+  .btn-content p {
+    font-size: 10px;
+  }
+  
+  .register-prompt p {
+    font-size: 12px;
+  }
+  
+  .live-status-indicator {
+    padding: 8px 12px;
+  }
+  
+  .live-status-indicator span {
+    font-size: 10px;
+  }
+}
+
+/* Small Mobile (below 480px) */
+@media (max-width: 480px) {
+  .unified-branding h1 {
+    font-size: 26px;
+  }
+  
+  .stats-row-unified {
+    gap: 8px;
+  }
+  
+  .stat-card-unified {
+    padding: 8px 4px;
+  }
+  
+  .stat-icon-unified {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .stat-value-unified {
+    font-size: 14px;
+  }
+  
+  .stat-label-unified {
+    font-size: 7px;
+  }
+  
+  .unified-login-card {
+    padding: 20px 16px;
+  }
+  
+  .login-header-unified {
+    margin-bottom: 20px;
+  }
+  
+  .login-header-unified h2 {
+    font-size: 20px;
+  }
+  
+  .cyber-lock-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .login-option-btn {
+    padding: 12px;
+  }
+  
+  .btn-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  
+  .btn-content h3 {
+    font-size: 14px;
+  }
+  
+  .btn-content p {
+    font-size: 9px;
+  }
+  
+  .register-prompt p {
+    font-size: 11px;
+  }
+  
+  .register-link-unified {
+    font-size: 11px;
+  }
+  
+  .live-status-indicator span {
+    font-size: 9px;
+  }
+}
+
+/* Extra Small Mobile (below 360px) */
+@media (max-width: 360px) {
+  .unified-branding h1 {
+    font-size: 24px;
+  }
+  
+  .stats-row-unified {
+    gap: 6px;
+  }
+  
+  .stat-card-unified {
+    padding: 6px 3px;
+  }
+  
+  .stat-icon-unified {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  
+  .stat-value-unified {
+    font-size: 12px;
+  }
+  
+  .stat-label-unified {
+    font-size: 6px;
+  }
+  
+  .unified-login-card {
+    padding: 16px 12px;
+  }
+  
+  .login-header-unified h2 {
+    font-size: 18px;
+  }
+  
+  .cyber-lock-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+  
+  .btn-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  
+  .btn-content h3 {
+    font-size: 13px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .feature-item-unified:hover {
+    transform: none;
+  }
+  
+  .stat-card-unified:hover {
+    transform: none;
+  }
+  
+  .login-option-btn:hover {
+    transform: none;
+  }
+}
+
+/* Prevent layout shift */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth transitions for all elements */
+.unified-container,
+.unified-branding,
+.unified-login-card,
+.stats-row-unified,
+.login-options {
+  transition: all 0.2s ease;
+}

@@ -1,0 +1,123 @@
+/* Home.css - Responsive Layout */
+
+/* Main Grid Layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+/* Left Column */
+.home-left {
+  width: 100%;
+}
+
+/* Right Column */
+.home-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Container */
+.container {
+  width: 95%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+
+/* Large Desktop (1400px and above) */
+@media (min-width: 1400px) {
+  .main-grid {
+    gap: 40px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1600px;
+  }
+}
+
+/* Desktop (1200px - 1400px) */
+@media (max-width: 1400px) {
+  .main-grid {
+    gap: 30px;
+  }
+  
+  .container {
+    width: 92%;
+  }
+}
+
+/* Small Desktop / Laptop (992px - 1200px) */
+@media (max-width: 1200px) {
+  .main-grid {
+    gap: 25px;
+  }
+  
+  .container {
+    width: 94%;
+  }
+}
+
+/* Tablet (768px - 992px) */
+@media (max-width: 992px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .home-right {
+    max-width: 100%;
+  }
+  
+  .container {
+    width: 96%;
+    padding: 0 15px;
+  }
+}
+
+/* Mobile Landscape (576px - 768px) */
+@media (max-width: 768px) {
+  .main-grid {
+    gap: 25px;
+    margin-top: 15px;
+  }
+  
+  .container {
+    width: 98%;
+    padding: 0 12px;
+  }
+}
+
+/* Mobile Portrait (480px - 576px) */
+@media (max-width: 576px) {
+  .main-grid {
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* Small Mobile (below 480px) */
+@media (max-width: 480px) {
+  .main-grid {
+    gap: 15px;
+  }
+  
+  .container {
+    padding: 0 8px;
+  }
+}
